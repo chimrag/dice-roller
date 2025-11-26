@@ -16,6 +16,7 @@ body {
     justify-content: center;
     border-radius: 20px;
     box-shadow: 3px 3px 12px rgba(0,0,0,0.3);
+    transition: 0.3s;
 }
 
 button {
@@ -30,4 +31,23 @@ button {
 
 button:hover {
     background: #444;
+}
+
+.credit {
+    margin-top: 20px;
+    color: gray;
+    font-size: 18px;
+}
+
+/* ⭐ Dice Rolling Animation */
+.roll {
+    animation: shake 0.6s ease-out;
+}
+
+@keyframes shake {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(20deg); }
+    50%  { transform: rotate(-20deg); }
+    75%  { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
 }
